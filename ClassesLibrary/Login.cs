@@ -42,12 +42,12 @@ namespace ClassesLibrary
         {
             return string.Format($"User Name: {UserName}\n" +
                                  $"Password: {PassWord}\n");
-                                 
+
 
         }//end methods
 
-    }
+    }//end Class
 
-}
+}//end NameSpace
 
 
