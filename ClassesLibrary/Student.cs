@@ -12,6 +12,9 @@ namespace ClassesLibrary
 
         private string _firstName;
         private string _lastName;
+        private string _id;
+        private float _gpa;
+        private string id;
 
         //People / Properties
         public string FirstName
@@ -26,12 +29,28 @@ namespace ClassesLibrary
             set { _lastName = value; }
         }//end lastname
 
+        public string Id
+        {
+
+            get { return _id; }
+            set { _id = value; }
+        }//end ID
+
+        public float Gpa
+        {
+            get { return _gpa; }
+            set { _gpa = value; }
+
+        }//end GPA
+
         //Collect / Constructors (ctors)
 
         public Student(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
+            Id = _id;
+            Gpa = _gpa;
         }//end FQ Constructor
 
         public Student()
@@ -43,7 +62,9 @@ namespace ClassesLibrary
         public override string ToString()
         {
             return string.Format($"First Name: {FirstName}\n" +
-                                 $"Last Name: {LastName}\n");
+                                 $"Last Name: {LastName}\n" +
+                                 $"Id: {Id}\n" +
+                                 $"GPA: {Gpa}\n");
                                 
 
         }//end methods
