@@ -14,7 +14,7 @@ namespace ClassesLibrary
         private string _lastName;
         private string _id;
         private float _gpa;
-        private string id;
+        
 
         //People / Properties
         public string FirstName
@@ -45,7 +45,7 @@ namespace ClassesLibrary
 
         //Collect / Constructors (ctors)
 
-        public Student(string firstName, string lastName)
+        public Student(string firstName, string lastName, string id, int gpa)
         {
             FirstName = firstName;
             LastName = lastName;
